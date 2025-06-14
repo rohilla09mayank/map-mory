@@ -12,13 +12,6 @@ import { AuthProvider } from "./contexts/FakeAuthContext";
 
 import ProtectedRoute from "./pages/ProtectedRoute";
 
-// import Homepage from "./pages/Homepage";
-// import Products from "./pages/Products";
-// import Pricing from "./pages/Pricing";
-// import NotFound from "./pages/NotFound";
-// import AppLayout from "./pages/AppLayout";
-// import Login from "./pages/Login";
-
 const Homepage = lazy(() => import("./pages/Homepage"));
 const Products = lazy(() => import("./pages/Products"));
 const Pricing = lazy(() => import("./pages/Pricing"));
