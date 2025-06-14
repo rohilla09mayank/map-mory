@@ -14,15 +14,3 @@ function AppLayout() {
 }
 
 export default AppLayout;
-
-/* 
-
-Todo
-1. 
-
-
-
-
-
-
-*/

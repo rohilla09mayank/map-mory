@@ -1,3 +1,16 @@
 {
-  "cities": []
+  "cities": [
+    {
+      "id": "72dc",
+      "cityName": "Delhi",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2024-08-06T17:12:01.000Z",
+      "notes": "Hometown. Very polluted",
+      "position": {
+        "lat": "28.5941685062326",
+        "lng": "77.2119140625"
+      }
+    }
+  ]
 }

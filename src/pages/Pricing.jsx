@@ -1,4 +1,3 @@
-// Uses the same styles as Product
 import PageNav from "../components/StaticWeb/PageNav";
 import styles from "./Product.module.css";
 

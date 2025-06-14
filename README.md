@@ -1,6 +1,6 @@
-### WorldWise: Your Personal Travel Map
+# MapMory: Your Personal Travel Map
 
-WorldWise is a web application that allows you to keep a visual diary of your travels. You can mark the cities and countries you've visited, add notes about your experiences, and see all your adventures displayed on an interactive map. This project uses a combination of modern frontend technologies to create a seamless and engaging user experience.
+MapMory is a web application that allows you to keep a visual diary of your travels. You can mark the cities and countries you've visited, add notes about your experiences, and see all your adventures displayed on an interactive map. This project uses a combination of modern frontend technologies to create a seamless and engaging user experience.
 
 ## Features
 
@@ -28,7 +28,7 @@ This project is built with a modern frontend stack:
 
 To get a local copy up and running, follow these simple steps.
 
-# Prerequisites
+### Prerequisites
 
 Make sure you have Node.js and npm installed on your machine.
 Installation & Setup
@@ -40,7 +40,7 @@ Installation & Setup
   npm install
 ```
 
-# Running the Application
+### Running the Application
 
 This project requires two terminals running concurrently: one for the React development server (frontend) and one for the JSON server (backend).
 
@@ -60,4 +60,4 @@ npm run server
 ```
 
 This will start the backend server, typically on http://localhost:8000. The application will make requests to this server to fetch and store data.
-Once both servers are running, you can open your browser to the frontend URL and start exploring the WorldWise app!
+Once both servers are running, you can open your browser to the frontend URL and start exploring the MapMory app!

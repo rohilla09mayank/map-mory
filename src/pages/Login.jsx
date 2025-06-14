@@ -7,7 +7,6 @@ import PageNav from "../components/StaticWeb/PageNav";
 
 export default function Login() {
   const { login, isAuthenticated } = useAuth();
-  // PRE-FILL FOR DEV PURPOSES
   const [email, setEmail] = useState("mayank@example.com");
   const [password, setPassword] = useState("qwerty");
   const navigate = useNavigate();

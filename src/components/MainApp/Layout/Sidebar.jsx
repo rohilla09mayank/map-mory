@@ -10,7 +10,7 @@ function Sidebar() {
       <AppNav />
       <Outlet />
       <footer className={styles.footer}>
-        <p>&copy; Copyright {new Date().getFullYear()} by WorldWise inc.</p>
+        <p>&copy; Copyright {new Date().getFullYear()} by MapMory inc.</p>
       </footer>
     </div>
   );
