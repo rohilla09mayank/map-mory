@@ -1,5 +1,7 @@
 import { createContext, useContext, useEffect, useReducer } from "react";
 
+const BASE_URL = "https://map-mory-api.onrender.com/cities";
+
 const CitiesContext = createContext();
 
 const initialState = { currentCity: {}, cities: [], isLoading: false };
@@ -39,7 +41,7 @@ function CitiesProvider({ children }) {
     async function fetchCities() {
       try {
         dispatch({ type: "loading/toggle" });
-        const res = await fetch("http://localhost:8000/cities");
+        const res = await fetch(BASE_URL);
         const data = await res.json();
         dispatch({ type: "cities/loaded", payload: data });
       } catch (err) {
@@ -56,7 +58,7 @@ function CitiesProvider({ children }) {
 
     try {
       dispatch({ type: "loading/toggle" });
-      const res = await fetch(`http://localhost:8000/cities/${id}`);
+      const res = await fetch(`${BASE_URL}${id}`);
       const data = await res.json();
       dispatch({ type: "city/loaded", payload: data });
     } catch (err) {
@@ -69,7 +71,7 @@ function CitiesProvider({ children }) {
   async function createCity(newCity) {
     try {
       dispatch({ type: "loading/toggle" });
-      const res = await fetch(`http://localhost:8000/cities/`, {
+      const res = await fetch(BASE_URL, {
         method: "POST",
         body: JSON.stringify(newCity),
         headers: {
@@ -88,7 +90,7 @@ function CitiesProvider({ children }) {
   async function deleteCity(id) {
     try {
       dispatch({ type: "loading/toggle" });
-      await fetch(`http://localhost:8000/cities/${id}`, {
+      await fetch(`${BASE_URL}${id}`, {
         method: "DELETE",
       });
       dispatch({ type: "cities/deleted", payload: id });
